@@ -5,7 +5,7 @@
 # 4. Maybe the problem is the outliers, i.e. at shallow depth have high temperature, but no data in deeper
 
 # So my questions
-# 1.
+# 1. Is there a way to do auto fitting of Nested model in gstat?
 # 2. If there is a outlier as a correct obervation, for example a volcano, could I remove it?
 # 3. How to decide a suitable namx value?
 setwd("uktest")
