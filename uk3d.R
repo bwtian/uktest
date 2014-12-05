@@ -9,6 +9,7 @@
 # 2. If there is a outlier as a correct obervation, for example a volcano, could I remove it?
 # 3. How to decide a suitable namx value?
 # 4. Is it possilbe to use a log backtransfter method to decrease the max value? What is it?
+# 5. After we make a variogram, can we get the equation of it?
 setwd("uktest")
 spdf  <- readRDS("spdf")
 grid  <- readRDS("grid")
