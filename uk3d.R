@@ -4,10 +4,16 @@
 ## from 16 to 14 but still quite large
 # 3. nmax have a big affect to the predicted value
 # 4. Maybe the problem is the outliers, i.e. at shallow depth have high temperature of t~z
+
+# So my questions
+# 1.
+# 2. If there is a outlier as a correct obervation, for example a volcano, could I remove it?
+# 3. How to decide a suitable namx value?
 setwd("uktest")
 spdf  <- readRDS("spdf")
 grid  <- readRDS("grid")
 coordinates(grid) <- ~x+y+z
+lccWgs84  <- "+proj=lcc +lat_1=32.8 +lat_2=43.2 +lat_0=38 +lon_0=137.5 +x_0=1000000 +y_0=1000000 +datum=WGS84 +units=m +no_defs"
 proj4string(grid)  <- CRS(lccWgs84)
 gridded(grid) <- TRUE
 
