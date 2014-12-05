@@ -1,3 +1,8 @@
+## Thank you very much for answer
+# 1. I think the Z is not the problem, because I use a regular grid
+# 2. With a nugget of 0.0001 as suggested by Jon Skoien have decreaed the value a little
+## from 16 to 14 but still quite large
+# 3. nmax have a big influces to the predicted value
 setwd("uktest")
 spdf  <- readRDS("spdf")
 grid  <- readRDS("grid")
@@ -10,7 +15,7 @@ uk.vgm <- variogram(logt ~ z, spdf,
 plot(uk.vgm)
 
 
-show.vgms()
+##
 uk.eye1  <- vgm(psill = 0.155,  model = "Gau",  range=700,  nugget=0.0001)
 uk.eye   <- vgm(psill = 0.125,  model = "Sph",  range=35000,  nugget=0,  add.to=uk.eye1)
 plot(uk.vgm, model = uk.eye, plot.numbers = TRUE)
