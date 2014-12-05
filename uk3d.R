@@ -1,5 +1,5 @@
 ## Thank you very much for answer
-# 1. Dear, edzer, I think the Z is not the problem, because I use a regular grid
+# 1. Dear edzer, I think the Z is not the problem, because I use a regular 3d grid
 # 2. With a nugget of 0.0001 as suggested by Jon Skoien have decreaed the value a little
 ## from 16 to 14 but still quite large
 # 3. nmax have a big affect to the predicted value
