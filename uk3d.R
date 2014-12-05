@@ -8,6 +8,7 @@
 # 1. Is there a way to do auto fitting of Nested model in gstat?
 # 2. If there is a outlier as a correct obervation, for example a volcano, could I remove it?
 # 3. How to decide a suitable namx value?
+# 4. Is it possilbe to use a log backtransfter method to decrease the max value?
 setwd("uktest")
 spdf  <- readRDS("spdf")
 grid  <- readRDS("grid")
