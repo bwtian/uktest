@@ -10,6 +10,8 @@ plot(uk.vgm, model = uk.eye, plot.numbers = TRUE)
 
 summary(spdf)
 summary(grid)
+
 logt.uk <- krige(log(t)~z, spdf, grid, model = uk.eye, nmax = 10)
-summary((spdf$logt))
+## predicedt and ovserved should be same
 summary((logt.uk$var1.pred))
+summary((spdf$logt))
