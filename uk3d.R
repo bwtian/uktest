@@ -2,7 +2,7 @@
 # 1. Dear edzer, I think the Z is not the problem, because I use a regular 3d grid
 # 2. With a nugget of 0.0001 as suggested by Jon Skoien have decreaed the max (15 -> 14)
 # 3. nmax have a big affect to the predicted value (namx 6~100, max: 16~9)
-# 4. Maybe the problem is the outliers, i.e. at shallow depth have high temperature, but no data in deeper
+# 4. Maybe the problem is the outliers, i.e. at shallow depth with high temperature, but no data in deeper
 
 # So my questions
 # 1. Is there a way to do auto fitting of Nested model in gstat?
