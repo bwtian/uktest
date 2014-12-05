@@ -1,3 +1,10 @@
+setwd("uktest")
+spdf  <- readRDS("spdf")
+grid  <- readRDS("grid")
+coordinates(grid) <- ~x+y+z
+proj4string(grid)  <- CRS(lccWgs84)
+gridded(grid) <- TRUE
+
 uk.vgm <- variogram(logt ~ z, spdf,
                     boundaries = c(seq(100,1000,100), seq(2000,45000,5000)))
 plot(uk.vgm)
