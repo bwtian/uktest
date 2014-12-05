@@ -26,7 +26,8 @@ plot(uk.vgm)
 uk.eye1  <- vgm(psill = 0.155,  model = "Gau",  range=700,  nugget=0.0001)
 uk.eye   <- vgm(psill = 0.125,  model = "Sph",  range=35000,  nugget=0,  add.to=uk.eye1)
 plot(uk.vgm, model = uk.eye, plot.numbers = TRUE)
-
+uk.fit  <- fit.variogram(uk.vgm, uk.eye, fit.sills = TRUE, fit.ranges = TRUE,
+                         + fit.method = 7, debug.level = 1, warn.if.neg = FALSE)
 summary(spdf)
 summary(grid)
 logt.uk <- krige(log(t)~z, spdf, grid, model = uk.eye, nmax = 10)
